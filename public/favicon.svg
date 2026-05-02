@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <circle cx="16" cy="16" r="15" fill="white" stroke="#e0e0e0" stroke-width="0.5"/>
+  <text
+    x="16"
+    y="21"
+    text-anchor="middle"
+    font-family="'Crimson Pro', Georgia, serif"
+    font-size="14"
+    font-weight="600"
+    fill="#111111"
+  >sp.</text>
+</svg>
