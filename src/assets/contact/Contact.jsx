@@ -17,8 +17,8 @@ export function Contact() {
       </div>
 
       <div ref={bodyRef} className={`contact-body${bodyVisible ? ' is-visible' : ''}`}>
-        <a href="mailto:sempater2005@gmail.com" className="contact-email">
-          sempater2005@gmail.com
+        <a href="mailto:sempaterbusiness@gmail.com" className="contact-email">
+          sempaterbusiness@gmail.com
         </a>
         <div className="contact-links">
           <a href="https://github.com/L1lmastersem" className="contact-link" target="_blank" rel="noopener noreferrer">
