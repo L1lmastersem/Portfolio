@@ -12,11 +12,11 @@ const projects = [
   },
   {
     number: '02',
-    title: 'First React Project',
-    description: 'The first time I learned React, i built a simple page that showcases small projects.',
-    tags: ['React', 'HTML', 'CSS'],
-    live: 'https://38252.hosts2.ma-cloud.nl/M7React/dist/',
-    github: 'https://github.com/L1lmastersem/M7BOReact',
+    title: 'Coming Soon',
+    description: '',
+    tags: [],
+    live: null,
+    github: null,
   },
   {
     number: '03',
