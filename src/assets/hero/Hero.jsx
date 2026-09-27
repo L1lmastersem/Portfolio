@@ -32,21 +32,18 @@ export function Hero() {
         </div>
       </div>
       
-      <div className="hero-photo">
-        <div className="hero-photo__frame">
-          {!photoFailed && (
+      {!photoFailed && (
+        <div className="hero-photo">
+          <div className="hero-photo__frame">
             <img
               src="/profile.jpg"
               alt="Sem Pater"
               className="hero-photo__img"
               onError={() => setPhotoFailed(true)}
             />
-          )}
-          {photoFailed && (
-            <span className="hero-photo__placeholder" aria-hidden="true"></span>
-          )}
+          </div>
         </div>
-      </div>
+      )}
 
       <div className="hero-scroll" aria-hidden="true">
         <span className="hero-scroll__label">{t.hero.scroll}</span>

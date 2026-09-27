@@ -10,27 +10,11 @@ const projectMeta = [
     live: 'https://38252.hosts2.ma-cloud.nl/webshop/html/index.html',
     github: 'https://github.com/L1lmastersem/webshop',
   },
-  {
-    number: '02',
-    key: null,
-    tags: [],
-    live: null,
-    github: null,
-  },
-  {
-    number: '03',
-    key: null,
-    tags: [],
-    live: null,
-    github: null,
-  },
 ];
 
 function ProjectRow({ meta, delay, t }) {
   const [ref, visible] = useInView();
-  const content = meta.key ? t.projects.items[meta.key] : null;
-  const title = content ? content.title : t.projects.comingSoon;
-  const description = content ? content.description : '';
+  const { title, description } = t.projects.items[meta.key];
 
   return (
     <article

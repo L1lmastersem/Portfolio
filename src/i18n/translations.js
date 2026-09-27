@@ -3,11 +3,12 @@ export const translations = {
     nav: {
       home: 'home',
       about: 'about',
+      projects: 'projects',
       contact: 'contact',
     },
     hero: {
       eyebrow: 'software developer',
-      bio: "Third-year student at Mediacollege Amsterdam. I build user friendly web applications with React, JavaScript and PHP.",
+      bio: "Third-year student at Mediacollege Amsterdam. I build user-friendly web applications with React, JavaScript and PHP.",
       downloadCv: 'Download CV',
       getInTouch: 'Get in touch',
       scroll: 'scroll',
@@ -26,7 +27,6 @@ export const translations = {
     projects: {
       eyebrow: 'selected work',
       heading: 'Projects',
-      comingSoon: 'Coming soon',
       live: 'Live',
       github: 'GitHub',
       items: {
@@ -50,6 +50,7 @@ export const translations = {
     nav: {
       home: 'home',
       about: 'over mij',
+      projects: 'projecten',
       contact: 'contact',
     },
     hero: {
@@ -73,7 +74,6 @@ export const translations = {
     projects: {
       eyebrow: 'geselecteerd werk',
       heading: 'Projecten',
-      comingSoon: 'Binnenkort',
       live: 'Live',
       github: 'GitHub',
       items: {
