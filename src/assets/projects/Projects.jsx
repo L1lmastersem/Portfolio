@@ -1,63 +1,65 @@
 import { useInView } from '../../hooks/useInView';
+import { useLanguage } from '../../i18n/useLanguage';
 import './Projects.css';
 
-const projects = [
+const projectMeta = [
   {
     number: '01',
-    title: 'E-commerce Webshop',
-    description: 'My First Webshop built with HTML, CSS, JavaScript and PHP. It features a product catalog, shopping cart, and user authentication.',
+    key: 'webshop',
     tags: ['HTML', 'JavaScript', 'CSS', 'PHP'],
     live: 'https://38252.hosts2.ma-cloud.nl/webshop/html/index.html',
     github: 'https://github.com/L1lmastersem/webshop',
   },
   {
     number: '02',
-    title: 'Coming Soon',
-    description: '',
+    key: null,
     tags: [],
     live: null,
     github: null,
   },
   {
     number: '03',
-    title: 'Coming Soon',
-    description: '',
+    key: null,
     tags: [],
     live: null,
     github: null,
   },
 ];
 
-function ProjectRow({ p, delay }) {
+function ProjectRow({ meta, delay, t }) {
   const [ref, visible] = useInView();
+  const content = meta.key ? t.projects.items[meta.key] : null;
+  const title = content ? content.title : t.projects.comingSoon;
+  const description = content ? content.description : '';
+
   return (
     <article
       ref={ref}
       className={`project-item${visible ? ' is-visible' : ''}`}
       style={{ transitionDelay: `${delay}s` }}
     >
-      <span className="project-number">{p.number}</span>
+      <span className="project-number">{meta.number}</span>
       <div className="project-body">
-        <h3 className="project-title">{p.title}</h3>
-        <p className="project-desc">{p.description}</p>
+        <h3 className="project-title">{title}</h3>
+        <p className="project-desc">{description}</p>
         <ul className="project-tags">
-          {p.tags.map(tag => (
+          {meta.tags.map(tag => (
             <li key={tag} className="project-tag">{tag}</li>
           ))}
         </ul>
       </div>
       <div className="project-links">
-        {p.live && (
-          <a href={p.live} className="project-link" target="_blank" rel="noopener noreferrer">
-            Live
+        {meta.live && (
+          <a href={meta.live} className="project-link" target="_blank" rel="noopener noreferrer">
+            {t.projects.live}
             <svg width="11" height="11" viewBox="0 0 11 11" fill="none" aria-hidden="true">
               <path d="M1 10L10 1M10 1H3M10 1V8" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </a>
         )}
-        {p.github && (
-          <a href={p.github} className="project-link" target="_blank" rel="noopener noreferrer">
-            GitHub
+        {meta.github && (
+          <a href={meta.github} className="project-link" target="_blank" rel="noopener noreferrer">
+            {t.projects.github}
             <svg width="11" height="11" viewBox="0 0 11 11" fill="none" aria-hidden="true">
               <path d="M1 10L10 1M10 1H3M10 1V8" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
@@ -70,15 +72,17 @@ function ProjectRow({ p, delay }) {
 
 export function Projects() {
   const [headerRef, headerVisible] = useInView();
+  const { t } = useLanguage();
+
   return (
     <section className="projects" id="projects">
       <div ref={headerRef} className={`projects-header${headerVisible ? ' is-visible' : ''}`}>
-        <span className="projects-eyebrow">selected work</span>
-        <h2 className="projects-heading">Projects</h2>
+        <span className="projects-eyebrow">{t.projects.eyebrow}</span>
+        <h2 className="projects-heading">{t.projects.heading}</h2>
       </div>
       <div className="projects-list">
-        {projects.map((p, i) => (
-          <ProjectRow key={p.number} p={p} delay={i * 0.1} />
+        {projectMeta.map((meta, i) => (
+          <ProjectRow key={meta.number} meta={meta} delay={i * 0.1} t={t} />
         ))}
       </div>
     </section>
