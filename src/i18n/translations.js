@@ -34,6 +34,10 @@ export const translations = {
           title: 'E-commerce Webshop',
           description: 'My first webshop, built with HTML, CSS, JavaScript and PHP. It features a product catalog, shopping cart, and user authentication.',
         },
+        dreamDestinations: {
+          title: 'Dream Destinations',
+          description: 'Built for the Skill Heroes competition. A React front end that shows travel destinations and their number of bookings, powered by a PHP REST API and a MySQL database.',
+        },
       },
     },
     contact: {
@@ -61,7 +65,7 @@ export const translations = {
     },
     about: {
       eyebrow: 'over mij',
-      heading: 'Sem Pater',
+      heading: 'Over mij',
       paragraph1: 'Derdejaars student softwareontwikkeling aan het Mediacollege Amsterdam. Ik bouw webapplicaties met React, JavaScript en PHP en ik ben trots op details die de meeste mensen nooit opmerken.',
       paragraph2: 'Ik ben development gaan doen omdat ik ideeën wilde omzetten in iets echts en bruikbaars. Ik werk graag aan een project van begin tot eind, van een ruwe schets tot een gelanceerd product dat ook echt fijn is om te gebruiken.',
       paragraph3: 'Naast school werk ik altijd wel aan side-projects of leer ik iets nieuws. Op dit moment focus ik me op het aanscherpen van mijn React vaardigheden en het beter begrijpen van backend-architectuur.',
@@ -80,6 +84,10 @@ export const translations = {
         webshop: {
           title: 'E-commerce Webshop',
           description: 'Mijn eerste webshop, gebouwd met HTML, CSS, JavaScript en PHP. Met productcatalogus, winkelwagen en gebruikersauthenticatie.',
+        },
+        dreamDestinations: {
+          title: 'Dream Destinations',
+          description: 'Gemaakt voor de Skill Heroes-wedstrijd. Een React-frontend die reisbestemmingen en hun aantal boekingen toont, gemaakt met een PHP REST API en een MySQL-database.',
         },
       },
     },

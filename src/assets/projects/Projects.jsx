@@ -12,10 +12,10 @@ const projectMeta = [
   },
   {
     number: '02',
-    key: null,
-    tags: [],
+    key: 'dreamDestinations',
+    tags: ['React', 'PHP', 'MySQL'],
     live: null,
-    github: null,
+    github: 'https://github.com/L1lmastersem/Destinations',
   },
   {
     number: '03',
