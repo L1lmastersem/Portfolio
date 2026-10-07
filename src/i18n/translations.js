@@ -3,6 +3,7 @@ export const translations = {
     nav: {
       home: 'home',
       about: 'about',
+      projects: 'projects',
       contact: 'contact',
     },
     hero: {
@@ -54,6 +55,7 @@ export const translations = {
     nav: {
       home: 'home',
       about: 'over mij',
+      projects: 'projecten',
       contact: 'contact',
     },
     hero: {

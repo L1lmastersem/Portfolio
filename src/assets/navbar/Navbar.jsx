@@ -19,6 +19,7 @@ export function Navbar() {
         <ul className="navbar-links">
           <li><a href="#" className="nav-link">{t.nav.home}</a></li>
           <li><a href="#about" className="nav-link">{t.nav.about}</a></li>
+          <li><a href="#projects" className="nav-link">{t.nav.projects}</a></li>
           <li><a href="#contact" className="nav-link">{t.nav.contact}</a></li>
         </ul>
         <div className="lang-switch" role="group" aria-label="Language switcher">
