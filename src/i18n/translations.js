@@ -40,7 +40,7 @@ export const translations = {
             { phase: 'Strategies', text: 'Moved to TradingView: built and backtested 10+ strategies in Pine Script on futures and crypto, and dropped every one without a real edge.' },
             { phase: 'Now', text: 'A Python simulator and a browser tool that merge exported trades by date to test daily risk limits, plus a live indicator that tracks risk across multiple charts.' },
           ],
-          insight: '“Each chart looked safe on its own, but merged by date, the worst day across two symbols went 56% over the daily loss limit. The safety net brought it back under the limit by adjusting only 9 of 3,703 trades.”',
+          insight: '“In my Opening Range Breakout (ORB) strategy, each chart looked safe on its own, but merged by date, the worst day across two symbols went 56% over the daily loss limit. The safety net brought it back under the limit by adjusting only 9 of 3,703 trades.”',
         },
         webshop: {
           title: 'E-commerce Webshop',
@@ -103,7 +103,7 @@ export const translations = {
             { phase: 'Strategieën', text: 'Overgestapt naar TradingView: meer dan tien strategieën in Pine Script gebouwd en gebacktest op futures en crypto, en alles zonder echte edge geschrapt.' },
             { phase: 'Nu', text: 'Een Python-simulator en een webtool die geëxporteerde trades op datum samenvoegen om dagelijkse risicolimieten te testen, plus een live indicator die het risico over meerdere grafieken bijhoudt.' },
           ],
-          insight: '“Elke grafiek leek los veilig, maar samengevoegd op datum ging de slechtste dag over twee symbolen 56% over de dagelijkse verlieslimiet. Het safety net bracht dat terug onder de limiet door maar 9 van de 3.703 trades aan te passen.”',
+          insight: '“Bij mijn Opening Range Breakout-strategie (ORB) leek elke grafiek los veilig, maar samengevoegd op datum ging de slechtste dag over twee symbolen 56% over de dagelijkse verlieslimiet. Het safety net bracht dat terug onder de limiet door maar 9 van de 3.703 trades aan te passen.”',
         },
         webshop: {
           title: 'E-commerce Webshop',

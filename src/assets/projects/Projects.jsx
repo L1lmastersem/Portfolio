@@ -22,8 +22,8 @@ const projectMeta = [
     key: 'tradingBot',
     sideProject: true,
     tags: ['Python', 'Pine Script', 'Pandas', 'JavaScript', 'Backtesting', 'Data analysis'],
-    live: '/tools/safety-net/',
-    github: null, // zet hier je GitHub-link neer als je de code online zet
+    live: 'https://38252.hosts2.ma-cloud.nl/risk-safety-net/',
+    github: 'https://github.com/L1lmastersem/risk-safety-net',
   },
 ];
 
