@@ -82,6 +82,17 @@
   gap: 10px;
 }
 
+.project-label {
+  align-self: flex-start;
+  font-family: 'Work Sans', -apple-system, sans-serif;
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: #9a9490;
+  margin-bottom: -4px;
+}
+
 .project-title {
   font-family: 'Crimson Pro', Georgia, serif;
   font-size: 1.45rem;
@@ -99,6 +110,69 @@
   color: #5a5550;
   margin: 0;
   max-width: 480px;
+}
+
+.project-timeline {
+  list-style: none;
+  margin: 6px 0 2px;
+  padding: 0;
+  max-width: 520px;
+  border-left: 1px solid #d4d0cb;
+}
+
+.project-timeline-step {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 0 0 14px 20px;
+}
+
+.project-timeline-step:last-child {
+  padding-bottom: 0;
+}
+
+.project-timeline-step::before {
+  content: '';
+  position: absolute;
+  left: -4px;
+  top: 6px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #faf9f7;
+  border: 1px solid #9a9490;
+}
+
+.project-timeline-step:last-child::before {
+  background: #1a1a1a;
+  border-color: #1a1a1a;
+}
+
+.project-timeline-phase {
+  font-family: 'Work Sans', -apple-system, sans-serif;
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: #9a9490;
+}
+
+.project-timeline-text {
+  font-family: 'Work Sans', -apple-system, sans-serif;
+  font-size: 0.84rem;
+  line-height: 1.6;
+  color: #5a5550;
+}
+
+.project-insight {
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-style: italic;
+  font-size: 1.02rem;
+  line-height: 1.55;
+  color: #3d3d3d;
+  margin: 4px 0 0;
+  max-width: 520px;
 }
 
 .project-tags {

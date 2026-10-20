@@ -19,10 +19,11 @@ const projectMeta = [
   },
   {
     number: '03',
-    key: null,
-    tags: [],
-    live: null,
-    github: null,
+    key: 'tradingBot',
+    sideProject: true,
+    tags: ['Python', 'Pine Script', 'Pandas', 'JavaScript', 'Backtesting', 'Data analysis'],
+    live: '/tools/safety-net/',
+    github: null, // zet hier je GitHub-link neer als je de code online zet
   },
 ];
 
@@ -40,8 +41,24 @@ function ProjectRow({ meta, delay, t }) {
     >
       <span className="project-number">{meta.number}</span>
       <div className="project-body">
+        {meta.sideProject && (
+          <span className="project-label">{t.projects.sideProject}</span>
+        )}
         <h3 className="project-title">{title}</h3>
         <p className="project-desc">{description}</p>
+        {content?.timeline && (
+          <ol className="project-timeline">
+            {content.timeline.map(step => (
+              <li key={step.phase} className="project-timeline-step">
+                <span className="project-timeline-phase">{step.phase}</span>
+                <span className="project-timeline-text">{step.text}</span>
+              </li>
+            ))}
+          </ol>
+        )}
+        {content?.insight && (
+          <p className="project-insight">{content.insight}</p>
+        )}
         <ul className="project-tags">
           {meta.tags.map(tag => (
             <li key={tag} className="project-tag">{tag}</li>

@@ -65,6 +65,24 @@
   margin-bottom: 28px;
 }
 
+.about-highlight {
+  border-left: 2px solid #1a1a1a;
+  padding: 4px 0 4px 28px;
+  margin-bottom: 36px;
+}
+
+.about-col .about-highlight p {
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 1.32rem;
+  line-height: 1.55;
+  color: #1a1a1a;
+  margin: 0 0 18px;
+}
+
+.about-col .about-highlight p:last-of-type {
+  margin-bottom: 0;
+}
+
 .about-btn {
   display: inline-flex;
   align-items: center;

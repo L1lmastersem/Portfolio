@@ -30,7 +30,18 @@ export const translations = {
       comingSoon: 'Coming soon',
       live: 'Live',
       github: 'GitHub',
+      sideProject: 'Side project',
       items: {
+        tradingBot: {
+          title: 'Trading Research & Tools',
+          description: 'My biggest side project: designing and testing trading strategies for futures and crypto, and building the tools around them. I learned that a backtest that looks good is often wrong, so most of the work went into testing honestly: realistic fills, two years of data and checking results trade by trade.',
+          timeline: [
+            { phase: 'Start', text: 'A Python bot (CCXT, Pandas) with a desktop app and a live web dashboard that only traded when three timeframes agreed.' },
+            { phase: 'Strategies', text: 'Moved to TradingView: built and backtested 10+ strategies in Pine Script on futures and crypto, and dropped every one without a real edge.' },
+            { phase: 'Now', text: 'A Python simulator and a browser tool that merge exported trades by date to test daily risk limits, plus a live indicator that tracks risk across multiple charts.' },
+          ],
+          insight: '“Each chart looked safe on its own, but merged by date, the worst day across two symbols went 56% over the daily loss limit. The safety net brought it back under the limit by adjusting only 9 of 3,703 trades.”',
+        },
         webshop: {
           title: 'E-commerce Webshop',
           description: 'My first webshop, built with HTML, CSS, JavaScript and PHP. It features a product catalog, shopping cart, and user authentication.',
@@ -82,7 +93,18 @@ export const translations = {
       comingSoon: 'Binnenkort',
       live: 'Live',
       github: 'GitHub',
+      sideProject: 'Side project',
       items: {
+        tradingBot: {
+          title: 'Trading Research & Tools',
+          description: 'Mijn grootste side project: tradingstrategieën voor futures en crypto ontwerpen en testen, en de tools eromheen bouwen. Ik leerde dat een backtest die er goed uitziet vaak niet klopt, dus het meeste werk zat in eerlijk testen: realistische fills, twee jaar aan data en resultaten trade voor trade controleren.',
+          timeline: [
+            { phase: 'Begin', text: 'Een bot in Python (CCXT, Pandas) met een desktop-app en een live webdashboard, die alleen tradede als drie tijdframes het eens waren.' },
+            { phase: 'Strategieën', text: 'Overgestapt naar TradingView: meer dan tien strategieën in Pine Script gebouwd en gebacktest op futures en crypto, en alles zonder echte edge geschrapt.' },
+            { phase: 'Nu', text: 'Een Python-simulator en een webtool die geëxporteerde trades op datum samenvoegen om dagelijkse risicolimieten te testen, plus een live indicator die het risico over meerdere grafieken bijhoudt.' },
+          ],
+          insight: '“Elke grafiek leek los veilig, maar samengevoegd op datum ging de slechtste dag over twee symbolen 56% over de dagelijkse verlieslimiet. Het safety net bracht dat terug onder de limiet door maar 9 van de 3.703 trades aan te passen.”',
+        },
         webshop: {
           title: 'E-commerce Webshop',
           description: 'Mijn eerste webshop, gebouwd met HTML, CSS, JavaScript en PHP. Met productcatalogus, winkelwagen en gebruikersauthenticatie.',

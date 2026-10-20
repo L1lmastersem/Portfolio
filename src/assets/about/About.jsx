@@ -21,8 +21,10 @@ export function About() {
           <p>{t.about.paragraph2}</p>
         </div>
         <div className="about-col">
-          <p>{t.about.paragraph3}</p>
-          <p>{t.about.paragraph4}</p>
+          <div className="about-highlight">
+            <p>{t.about.paragraph3}</p>
+            <p>{t.about.paragraph4}</p>
+          </div>
           <a href="/cv.pdf" className="about-btn" download>{t.about.downloadCv}</a>
         </div>
       </div>
